@@ -10,9 +10,10 @@
  * Enables the HTTP Strict Transport Security (HSTS) header in WordPress. 
  */
 function tg_enable_strict_transport_security_hsts_header_wordpress() {
-    header( 'Strict-Transport-Security: max-age=10886400' );
+    header( 'Strict-Transport-Security: max-age=15768000' );
 }
 add_action( 'send_headers', 'tg_enable_strict_transport_security_hsts_header_wordpress' );
+
 /*-------------------------------------
 
   gutenberg stuff

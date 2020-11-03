@@ -34,7 +34,7 @@
                     https://fonts.googleapis.com 
                     https://use.typekit.net	;
 
-    script-src      'self' 'unsafe-inline'
+    script-src      'self' 
     				https://www.bellaworksweb.com 
                     https://bellaworksweb.com
                     https://ajax.googleapis.com
@@ -44,7 +44,7 @@
     				https://www.bellaworksweb.com 
                     https://bellaworksweb.com ; 
 
-    script-src-elem	'self' unsafe-inline'
+    script-src-elem	'self' 
     				https://www.bellaworksweb.com 
                     https://bellaworksweb.com
                     https://ajax.googleapis.com
