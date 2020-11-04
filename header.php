@@ -36,7 +36,7 @@
                     https://fonts.googleapis.com 
                     https://use.typekit.net	;
 
-    script-src      'self' 'unsafe-inline'
+    script-src      'self'
                     https://ajax.googleapis.com
                     https://use.fontawesome.com  ;
 
