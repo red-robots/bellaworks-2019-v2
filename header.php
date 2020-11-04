@@ -36,7 +36,7 @@
                     https://fonts.googleapis.com 
                     https://use.typekit.net	;
 
-    script-src      https: 'self'
+    script-src      'self'
                     https://ajax.googleapis.com
                     https://use.fontawesome.com  ;
 
