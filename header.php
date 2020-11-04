@@ -12,7 +12,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-		<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
+	<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
 
     font-src 		'self' 
     				https://fonts.googleapis.com 
@@ -23,8 +23,6 @@
                     https://www.google.com ;
 
     img-src 		'self' 'unsafe-inline' 
-                    https://www.bellaworksweb.com 
-                    https://bellaworksweb.com
                     https://secure.gravatar.com
                     http://0.gravatar.com
                     https://use.fontawesome.com
@@ -35,18 +33,12 @@
                     https://use.typekit.net	;
 
     script-src      'self' 
-    				https://www.bellaworksweb.com 
-                    https://bellaworksweb.com
                     https://ajax.googleapis.com
                     https://use.fontawesome.com  ;
 
     manifest-src    'self'
-    				https://www.bellaworksweb.com 
-                    https://bellaworksweb.com ; 
 
     script-src-elem	'self' 
-    				https://www.bellaworksweb.com 
-                    https://bellaworksweb.com
                     https://ajax.googleapis.com
                     https://use.fontawesome.com ;
 
