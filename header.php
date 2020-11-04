@@ -15,7 +15,7 @@
 	<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
 
 
-    font-src 		'self' 'unsafe-inline'
+    font-src 		https: 'self' 'unsafe-inline'
     				https://fonts.googleapis.com 
                     https://fonts.gstatic.com
                     https://use.typekit.net
@@ -24,7 +24,7 @@
                     https://www.google.com 
                     data:;
 
-    img-src 		'self' 'unsafe-inline'
+    img-src 		https: 'self' 'unsafe-inline'
     				https://secure.gravatar.com
                     http://0.gravatar.com
                     https://use.fontawesome.com
@@ -32,23 +32,23 @@
                     https://www.facebook.com  
                     data:;
 
-    style-src 		'unsafe-inline' 
+    style-src 		https: 'unsafe-inline' 
                     https://fonts.googleapis.com 
                     https://use.typekit.net	;
 
-    script-src      'self'
+    script-src      https: 'self'
                     https://ajax.googleapis.com
                     https://use.fontawesome.com  ;
 
     manifest-src    'self' ;
 
-    script-src-elem	'self' 'unsafe-inline'
+    script-src-elem	https: 'self' 'unsafe-inline'
     				https://connect.facebook.net
     				http://www.google-analytics.com
     				https://ajax.googleapis.com
                     https://use.fontawesome.com ;
 
-    style-src-elem 'self' 'unsafe-inline'
+    style-src-elem https: 'self' 'unsafe-inline'
     				https://p.typekit.net
     				https://use.fontawesome.com
     				https://fonts.googleapis.com
