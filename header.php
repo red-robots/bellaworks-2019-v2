@@ -14,32 +14,38 @@
 <head>
 	<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
 
-    font-src 		'self' 
+
+    font-src 		'self' 'unsafe-inline'
     				https://fonts.googleapis.com 
                     https://fonts.gstatic.com
                     https://use.typekit.net
                     https://p.typekit.net
                     https://use.fontawesome.com
-                    https://www.google.com ;
+                    https://www.google.com 
+                    data:;
 
-    img-src 		'self' 'unsafe-inline' 
-                    https://secure.gravatar.com
+    img-src 		'self' 'unsafe-inline'
+    				https://secure.gravatar.com
                     http://0.gravatar.com
                     https://use.fontawesome.com
-                    https://www.google.com  ;
+                    https://www.google.com
+                    https://www.facebook.com  
+                    data:;
 
-    style-src 		'self' 'unsafe-inline' 
+    style-src 		'unsafe-inline' 
                     https://fonts.googleapis.com 
                     https://use.typekit.net	;
 
-    script-src      'self' 
+    script-src      'self' 'unsafe-inline'
                     https://ajax.googleapis.com
                     https://use.fontawesome.com  ;
 
-    manifest-src    'self'
+    manifest-src    'self' ;
 
-    script-src-elem	'self' 
-                    https://ajax.googleapis.com
+    script-src-elem	'self' 'unsafe-inline'
+    				https://connect.facebook.net
+    				http://www.google-analytics.com
+    				https://ajax.googleapis.com
                     https://use.fontawesome.com ;
 
     style-src-elem 'self' 'unsafe-inline'
@@ -49,7 +55,7 @@
     				https://use.typekit.net
     				https://fonts.googleapis.com ;
 
-    frame-src		'self'
+    frame-src		https://www.facebook.com
     				https://www.google.com ;
 
     connect-src		https://www.google-analytics.com 
@@ -72,8 +78,8 @@
 <link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
 
 <!-- DOB -->
-<?php the_field('google_analtyics','option'); ?>
-
+<?php //the_field('google_analtyics','option'); ?>
+<script  src="<?php bloginfo( 'template_url' ); ?>/inc/analytics.js"></script>
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
 
 <!-- Facebook Pixel Code -->
@@ -85,7 +91,8 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1107124109368587');
-fbq('track', "PageView");</script>
+fbq('track', "PageView");
+</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
 /></noscript>
