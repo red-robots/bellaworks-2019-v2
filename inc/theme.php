@@ -27,6 +27,7 @@ add_theme_support('editor-styles');
 
 add_image_size('feed', 1225, 718, array('center', 'center'));
 add_image_size('blog', 500, 293, array('center', 'center'));
+add_image_size('work', 700, 500, array('center', 'center'));
 /*-------------------------------------
 	Custom client login, link and title.
 ---------------------------------------*/
