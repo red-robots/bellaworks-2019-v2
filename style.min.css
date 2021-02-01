@@ -1436,7 +1436,8 @@ body{font-family:futura-pt,sans-serif}
 #masthead{padding:5px 0;margin:0;width:100%;float:left}
 .logo,h1.logo{width:200px;clear:none;float:left;font-size:1rem;position:relative;z-index:50}
 .logo a,h1.logo a{width:200px;display:block}
-.button{position:relative;display:inline-block;cursor:pointer;outline:0;border:0;margin:20px 0;vertical-align:middle;text-decoration:none;background:transparent;padding:0;font-size:inherit;font-family:inherit;border-radius:1.625rem;background-color:#3689b4}
+.center{width:100%;text-align:center}
+.button{position:relative;display:inline-block;cursor:pointer;outline:0;border:0;margin:20px 0;vertical-align:middle;text-decoration:none;background:transparent;padding:0;font-size:16px;font-family:inherit;border-radius:1.625rem;background-color:#3689b4}
 .button.herobtn{background-color:rgba(255,255,255,0.3)}
 .button .action{width:15rem;height:auto}
 .button .action a.lead{width:100%;display:block;height:100%;position:absolute;top:0;left:0;z-index:1000000}
@@ -1445,7 +1446,7 @@ body{font-family:futura-pt,sans-serif}
 .button .action .circle .icon{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);position:absolute;top:0;bottom:0;margin:auto;background:#3689b4}
 .button .action .circle .icon.arrow{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);left:.625rem;width:1.125rem;height:.125rem;background:0}
 .button .action .circle .icon.arrow::before{position:absolute;content:'';top:-0.25rem;right:.0625rem;width:.625rem;height:.625rem;border-top:.125rem solid #fff;border-right:.125rem solid #fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
-.button .action .button-text,.button .action input.gform_button{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);position:absolute;top:0;left:0;right:0;bottom:0;padding:.75rem 0;margin:0 0 0 1.85rem;color:#fff;font-weight:700;line-height:1.6;text-align:center;text-transform:uppercase;z-index:100}
+.button .action .button-text,.button .action input.gform_button{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);position:absolute;top:0;left:0;right:0;bottom:0;padding:.75rem 0;margin:0 0 0 1.85rem;color:#fff;font-weight:700;font-size:inherit;line-height:1.6;text-align:center;text-transform:uppercase;z-index:100}
 .button:hover .circle{width:100%;background:#f37748}
 .button:hover .circle .icon.arrow{background:#fff;-webkit-transform:translate(1rem,0);transform:translate(1rem,0)}
 .button:hover .button-text{color:#fff}
@@ -1455,6 +1456,17 @@ section.post{width:100%;float:left}
 section.post img{max-width:100%}
 article.post{width:100%;float:left;font-size:1.3rem;color:#4e5356}
 article.post img{max-width:100%}
+article.post .headline{font-weight:700;font-size:3rem;color:#f37748;text-transform:capitalize;line-height:1;margin-bottom:10px}
+article.post .subhead{font-weight:700;font-size:1.7rem;color:#3689b4;margin-bottom:30px;font-style:italic;line-height:1}
+article.post a{-webkit-transition:all ease .2s;transition:all ease .2s;border-bottom:1px solid #f37748}
+article.post a:hover{background-color:#f37748;color:#fff}
+article.post .step{width:100%;float:left;margin:0 0 30px 0}
+article.post .step .num{width:100%;float:left;line-height:1;color:#fff;text-align:center;background:#3689b4;background:linear-gradient(218deg,#3689b4 0,#2d5265 100%);margin:0 0 30px 0}
+article.post .step .num .inum,article.post .step .num .stepper{width:100%;float:left;font-weight:bold}
+article.post .step .num .inum{font-size:10rem;padding:0 0 20px 0}
+article.post .step .num .stepper{font-size:2rem;padding:20px 0 0 0;text-transform:uppercase}
+article.post .step .copy{width:100%;float:left}
+article.post .step .copy h2{color:#3689b4}
 .single-extras{width:100%;text-align:center}
 .footer-blocs{width:100%;float:left}
 .footer-blocs .bloc{margin:0 0 30px 0}
@@ -1621,6 +1633,17 @@ ul.servlist a{padding:7px 10px;width:100%;position:relative;display:block;backgr
 ul.servlist a:hover{background-color:#3689b4;color:#fff}
 ul.servlist a:hover svg{right:5px}
 ul.servlist a svg{width:auto;position:absolute;right:10px;-webkit-transition:all ease .3s;transition:all ease .3s;top:10px}
+section.home-intro{width:100%;position:relative;float:right;background-color:#fff;padding:30px}
+section.home-intro p{color:#4e5356;width:90%;margin:20px auto;font-size:1.5rem}
+section.home-intro p.button-text{width:auto}
+section.home-intro .downloadsec p.co{font-size:1.6rem}
+section.home-intro h3{font-size:2.5rem;color:#002c4c;margin:0 0 15px 0;width:100%;text-align:center}
+section.home-why{width:100%;position:relative;float:right;background-color:#fff;padding:30px}
+section.home-why p{color:#4e5356;width:90%;margin:20px auto;font-size:1.5rem}
+section.home-why p.button-text{width:auto}
+section.home-why h3{font-size:2.5rem;color:#002c4c;margin:0 0 40px 0;width:100%;text-align:center}
+section.home-why ul{font-size:1.5rem;color:#002c4c;margin:0 auto 15px auto;padding:0;width:90%;text-align:left;font-size:1.5rem;list-style:none}
+section.home-why li{margin:0 auto 40px auto;line-height:1.2}
 section.offer{width:100%;position:relative;float:right;background-color:#fff;padding:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 section.offer p{color:#4e5356}
 section.offer .downloadsec p.co{font-size:1.6rem}
@@ -1680,6 +1703,24 @@ section.our-clients h3{margin:0 0 40px 0}
 section.our-clients .client{width:150px;margin:0 20px;opacity:.7}
 section.are-you-ready{width:100%;text-align:center;float:left;padding:40px 0}
 .work-video{width:90%;margin:0 auto;clear:both}
+section.home-sections{width:100%;float:left;position:relative;color:#fff}
+section.home-sections h2.home-service{width:auto;float:left;margin-left:8.33333%;padding-top:6%}
+section.home-sections .third{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+section.home-sections .service-wrap{width:100%;float:left;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;line-height:1.45}
+section.home-sections ul{margin:10px 0;padding:0;list-style:none}
+section.home-sections li{margin:0;padding:0}
+section.home-sections a{color:#fff}
+section.home-sections a:hover{color:rgba(255,255,255,0.5)}
+section.home-sections h3{font-size:1.7rem;line-height:1;margin:0 0 10px 0}
+section.home-sections p{margin:0}
+section.home-sections .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)}
+section.home-partnership{width:100%;position:relative;float:right;color:#fff;padding:30px}
+section.home-partnership p{color:#fff;width:90%;margin:20px auto;font-size:1.5rem}
+section.home-partnership p.button-text{width:auto}
+section.home-partnership .button{background-color:rgba(255,255,255,0.1)}
+section.home-partnership h3{font-size:2.5rem;color:#fff;margin:0 0 40px 0;width:100%;text-align:center}
+section.home-partnership a{color:#fff}
+section.home-partnership a:hover{color:rgba(255,255,255,0.5)}
 section.services{width:100%;float:left;position:relative;color:#fff}
 section.services h2.home-service{width:auto;float:left;margin-left:8.33333%;padding-top:6%}
 section.services .third{margin:-4% 0 0 0}
@@ -1714,9 +1755,15 @@ section.benefits ul{margin:0;padding:0;list-style:disc;list-style-position:insid
 section.benefits ul li{margin:0;padding:0 0 0 20px;font-size:1.3rem;margin:0 0 15px 0}
 section.testis{width:100%;padding:60px 5%}
 section.testis h2{font-size:2rem;width:100%;text-align:center;padding:40px 0}
-section.testis .testi{width:90%;margin:20px auto;background-color:#fff;-webkit-box-shadow:0 0 13px 0 rgba(0,0,0,0.21);box-shadow:0 0 13px 0 rgba(0,0,0,0.21);-webkit-transition:all ease .2s;transition:all ease .2s;padding:20px}
+section.testis .testi{width:90%;margin:20px auto;background-color:#fff;-webkit-transition:all ease .2s;transition:all ease .2s;padding:20px;border:5px solid #eee}
 section.testis .testi:hover{-webkit-box-shadow:0 0 27px 3px rgba(0,0,0,0.1);box-shadow:0 0 27px 3px rgba(0,0,0,0.1)}
 section.testis .testi .names{margin:20px 0;font-weight:bold}
+section.service-page .third{display:block}
+section.service-page .third h2{line-height:1;margin-bottom:10px}
+section.service-page .third .permalink{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:all ease-out .3s;transition:all ease-out .3s;clear:both;float:left;margin:20px 0;color:#333}
+section.service-page .third:hover .permalink{float:right;-webkit-transform:scale(2);transform:scale(2);color:#f37748}
+section.service-page .third .bottom{border-bottom:5px solid #efefef;width:100%;clear:both}
+section.service-page a{color:#4e5356;position:absolute;top:0;left:0;width:100%;height:100%;text-indent:-9000px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
@@ -1766,6 +1813,10 @@ nav.mobilemenu{display:none}
 .logo,h1.logo{width:200px;margin:15px 0 0 0}
 .logo a,h1.logo a{width:200px}
 section.post{width:66.66667%;float:right}
+article.post .headline{font-size:3rem}
+article.post .subhead{font-size:1.7rem}
+article.post .step .num{width:25%;margin:0}
+article.post .step .copy{width:70%;float:right}
 .single-extras{width:25%;text-align:left;float:left;margin-right:8.33333%}
 .site-footer .footer-logo{margin:0 0 30px 0}
 .third{width:33.33333%;float:left;text-align:left}
@@ -1796,6 +1847,11 @@ section.secondary-hero section.secret h2{font-size:2.5rem}
 section.secondary-hero section.secret .q{font-size:1.5rem}
 section.secondary-hero section.secret .a{font-size:2rem}
 section.about-what-we-do .icon{width:30%}
+section.home-intro{padding:30px}
+section.home-intro p{width:70%}
+section.home-why{padding:30px}
+section.home-why p{width:70%}
+section.home-why ul{width:70%}
 section.offer{padding:30px}
 .the-pitch{width:75%}
 .the-pitch .paper{width:20%;float:left;margin:0}
@@ -1807,6 +1863,11 @@ section.our-staff .person{width:26%;overflow:hidden}
 section.work a.third{height:140px}
 .work-video{width:80%}
 .work-video{width:60%}
+section.home-sections{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+section.home-sections::before{position:absolute;top:0;bottom:0;left:33.33333%;display:block;width:33.33333%;background-color:#337fa7;content:""}
+section.home-sections .service-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+section.home-partnership{padding:30px}
+section.home-partnership p{width:70%}
 section.services{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 section.services::before{position:absolute;top:0;bottom:0;left:33.33333%;display:block;width:33.33333%;background-color:#337fa7;content:""}
 section.services .service-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
@@ -1833,6 +1894,8 @@ section.news .third{width:30%;margin:1.5%}
 .herowrap{padding:0}
 #masthead{padding:50px 0}
 .button.herobtn{margin-right:20px}
+article.post .headline{font-size:3rem}
+article.post .subhead{font-size:1.7rem}
 #leadmagnet{width:60%}
 .home-flex section.image img{bottom:-100px;right:10%}
 section.hero{width:70%;text-align:left;margin:0 0 0 5%}
@@ -1849,9 +1912,17 @@ section.secondary-hero section.secret{padding:20px 0 20px 0;width:55%;text-align
 section.secondary-hero section.secret h2{font-size:2.5rem}
 section.secondary-hero section.secret .q{font-size:1.5rem}
 section.secondary-hero section.secret .a{font-size:2rem}
+section.home-intro{padding:80px 0}
+section.home-intro p{width:60%}
+section.home-intro h3{margin:0 auto}
+section.home-why{padding:80px 0}
+section.home-why p{width:60%}
+section.home-why ul{width:60%}
 section.offer{padding:80px 0}
 section.offer h3{margin:0 auto}
 section.work a.third{height:280px}
+section.home-partnership{padding:80px 0}
+section.home-partnership p{width:60%}
 section.benefits h2{font-size:2.9em}
 section.benefits h3{font-size:1.8em}
 }@media screen and (min-width:1500px){.home-flex section.image img{bottom:-100px;right:10%}

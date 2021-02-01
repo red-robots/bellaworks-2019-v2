@@ -117,6 +117,10 @@ body {
 // 		}
 // 	}
 // }
+.center {
+	width: 100%;
+	text-align: center;
+}
 .button {
   position: relative;
   display: inline-block;
@@ -128,7 +132,8 @@ body {
   text-decoration: none;
   background: transparent;
   padding: 0;
-  font-size: inherit;
+  // font-size: inherit;
+  font-size: 16px;
   font-family: inherit;
   border-radius: 1.625rem;
   background-color: rgba($color-light-blue, 1 );
@@ -199,6 +204,7 @@ body {
       margin: 0 0 0 1.85rem;
       color: #fff;
       font-weight: 700;
+      font-size: inherit;
       line-height: 1.6;
       text-align: center;
       text-transform: uppercase;
@@ -254,6 +260,87 @@ article.post {
 	}
 	img {
 		max-width: 100%;
+	}
+	.headline {
+		font-weight: 700;
+		font-size: 3rem;
+		color: $color-mandarin;
+		text-transform: capitalize;
+		line-height: 1;
+		margin-bottom: 10px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 3rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 3rem;
+		}
+	}
+	.subhead {
+		font-weight: 700;
+		font-size: 1.7rem;
+		color: $color-light-blue;
+		margin-bottom: 30px;
+		font-style: italic;
+		line-height: 1;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 1.7rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 1.7rem;
+		}
+	}
+	a {
+		@include transition(all ease .2s);
+		 border-bottom: 1px solid $color-mandarin;
+		&:hover {
+			background-color: $color-mandarin;
+			color: #fff;
+		}
+	}
+	.step {
+		width: 100%;
+		float: left;
+		margin: 0 0 30px 0;
+		.num {
+			width: 100%;
+			float: left;
+			line-height: 1;
+			// background-color: $color-light-blue;
+			color: #fff;
+			text-align: center;
+			background: rgb(54,137,180);
+background: linear-gradient(218deg, rgba(54,137,180,1) 0%, rgba(45,82,101,1) 100%);
+margin: 0 0 30px 0;
+			@media screen and (min-width: $tabwidth) {
+				width: 25%;
+				margin: 0;
+			}
+			.inum, .stepper {
+				width: 100%;
+				float: left;
+				font-weight: bold;
+			}
+			.inum {
+				font-size: 10rem;
+				padding: 0px 0 20px 0;
+			}
+			.stepper {
+				font-size: 2rem;
+				padding: 20px 0 0 0;
+				text-transform: uppercase;
+			}
+		}
+		.copy {
+			width: 100%;
+			float: left;
+			@media screen and (min-width: $tabwidth) {
+				width: 70%;
+				float: right;
+			}
+			h2 {
+				color: $color-light-blue;
+			}
+		}
 	}
 }
 .single-extras {

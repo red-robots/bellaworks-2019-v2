@@ -51,108 +51,37 @@ $block_3_text = get_field('block_3_text');
 
 			endif; ?>
 
-				<section class="about-what-we-do">
-					<div class="third">
-						<div class="icon">
-							<img src="<?php bloginfo('template_url'); ?>/images/icon_mock5.png">	
-						</div>
-						<h2><?php echo $service_1_title; ?></h2>
-						<?php echo $service_1_copy; ?>
-						<ul class="servlist">
+				<section class="news service-page">
+					
 						<?php
 							$wp_query = new WP_Query();
 							$wp_query->query(array(
-							'post_type'=>'service',
-							'posts_per_page' => 10,
-							'paged' => $paged,
-							'tax_query' => array(
-								array(
-									'taxonomy' => 'service_type', // your custom taxonomy
-									'field' => 'slug',
-									'terms' => array( 'web-design' ) // the terms (categories) you created
-								)
-							)
-						));
+								'post_type'=>'service',
+								'posts_per_page' => -1
+							));
 						if ($wp_query->have_posts()) : ?>
-						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-							<li>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
-									<i class="fas fa-chevron-right"></i>
-								</a>
-							</li>
+							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); 
+									$exc = get_field('excerpt');
+								?>
+								<div class="third blogpost ">
+									<div class="js-blocks">
+										<!-- <div class="icon">
+											<img src="<?php bloginfo('template_url'); ?>/images/icon_mock5.png">	
+										</div> -->
+										<h2><?php the_title(); ?></h2>
+										<?php if( $exc ) { echo '<div>'.$exc.'</div>'; } ?>
+										
+									</div>	
+									<div class="permalink">
+										<i class="fas fa-chevron-right"></i>
+									</div>
+									<div class="bottom"></div>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</div>
 							<?php endwhile; ?>
 						<?php endif; ?>
-						</ul>
-					</div>
-					<div class="third">
-						<div class="icon">
-							<img src="<?php bloginfo('template_url'); ?>/images/icon_idea.png">
-						</div>
-						<h2><?php echo $service_2_title; ?></h2>
-						<?php echo $service_2_copy; ?>
-						<ul class="servlist">
-						
-							<?php
-							$wp_query = new WP_Query();
-							$wp_query->query(array(
-							'post_type'=>'service',
-							'posts_per_page' => 10,
-							'paged' => $paged,
-							'tax_query' => array(
-								array(
-									'taxonomy' => 'service_type', // your custom taxonomy
-									'field' => 'slug',
-									'terms' => array( 'branding-strategy' ) // the terms (categories) you created
-								)
-							)
-						));
-						if ($wp_query->have_posts()) : ?>
-						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-							<li>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
-									<i class="fas fa-chevron-right"></i>
-								</a>
-							</li>
-							<?php endwhile; ?>
-						<?php endif; ?>
-						</ul>
-					</div>
-					<div class="third">
-						<div class="icon">
-							<img src="<?php bloginfo('template_url'); ?>/images/icon_onlinecart.png">
-						</div>
-						<h2><?php echo $service_3_title; ?></h2>
-						<?php echo $service_3_copy; ?>
-						<ul class="servlist">
-						
-							<?php
-							$wp_query = new WP_Query();
-							$wp_query->query(array(
-							'post_type'=>'service',
-							'posts_per_page' => 10,
-							'paged' => $paged,
-							'tax_query' => array(
-								array(
-									'taxonomy' => 'service_type', // your custom taxonomy
-									'field' => 'slug',
-									'terms' => array( 'custom-development' ) // the terms (categories) you created
-								)
-							)
-						));
-						if ($wp_query->have_posts()) : ?>
-						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-							<li>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
-									<i class="fas fa-chevron-right"></i>
-								</a>
-							</li>
-							<?php endwhile; ?>
-						<?php endif; ?>
-						</ul>
-					</div>
+					
+					
 				</section>
 			</div>
 

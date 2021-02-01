@@ -158,8 +158,23 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
 								$videoLink = get_field('vid_link');
  
 							wp_reset_postdata(); ?>
-						<h2><?php echo $herotext; ?></h2>
-						<h3><?php echo $herosmall; ?></h3>
+							<?php 
+								/*
+									Other Titles...
+
+									Charlotte Web Design and Development Experts
+
+									GROW YOUR BUSINESS AND YOUR BRAND
+									with expert web design and marketing services
+
+									WEB SOLUTIONS BUILT FOR BUSINESS
+									Expert web design and digital marketing services
+								*/
+							?>
+						<!-- <h2><?php //echo $herotext; ?></h2>
+						<h3><?php //echo $herosmall; ?></h3> -->
+						<h2>GROW YOUR BUSINESS<br>AND YOUR BRAND</h2>
+						<h3>with expert web design and marketing services</h3>
 						<div class="button herobtn">
 							<div class="action">
 							<a href="<?php bloginfo('url'); ?>/lets-do-this">	
