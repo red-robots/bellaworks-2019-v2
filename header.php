@@ -37,6 +37,8 @@
                     https://use.typekit.net	;
 
     script-src      'self'
+                    https://www.google.com
+                    https://www.google-analytics.com
                     https://ajax.googleapis.com
                     https://use.fontawesome.com  ;
 
