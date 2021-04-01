@@ -28,6 +28,8 @@ get_header(); ?>
 					<div class="post-content">
 						<section class="post">
 							<article class="post">
+
+
 								<?php the_content(); ?>
 							</article>
 						</section>

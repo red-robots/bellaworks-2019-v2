@@ -7,6 +7,24 @@
  *	Designed by: Austin Crane
  */
 jQuery(document).ready(function ($) {
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScript = document.getElementsByTagName('script')[0];
+  firstScript.parentNode.insertBefore(tag, firstScript);
+
+  function onYouTubeIframeAPIReady() {
+    new YT.Player('player', {
+      events: {
+        'onStateChange': function onStateChange(evt) {
+          if (evt.data === YT.PlayerState.ENDED) {
+            //document.getElementById('manual-optin-trigger').click(); 
+            alert('vid has finished');
+          }
+        }
+      }
+    });
+  }
+
   $(window).scroll(function () {
     $(".mobile-header-scroll").addClass("scrolled");
     $("#masthead").addClass("scrolled");
@@ -120,6 +138,38 @@ jQuery(document).ready(function ($) {
 
   $('.js-blocks').matchHeight();
   $('.js-titles').matchHeight();
+  /*
+  *
+  *	Lazy Load Images
+  *
+  ------------------------------------*/
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   var lazyloadImages = document.querySelectorAll("img.lazy");    
+  //   var lazyloadThrottleTimeout;
+  //   function lazyload () {
+  //     if(lazyloadThrottleTimeout) {
+  //       clearTimeout(lazyloadThrottleTimeout);
+  //     }    
+  //     lazyloadThrottleTimeout = setTimeout(function() {
+  //         var scrollTop = window.pageYOffset;
+  //         lazyloadImages.forEach(function(img) {
+  //             if(img.offsetTop < (window.innerHeight + scrollTop)) {
+  //               img.src = img.dataset.src;
+  //               img.classList.remove('lazy');
+  //             }
+  //         });
+  //         if(lazyloadImages.length == 0) { 
+  //           document.removeEventListener("scroll", lazyload);
+  //           window.removeEventListener("resize", lazyload);
+  //           window.removeEventListener("orientationChange", lazyload);
+  //         }
+  //     }, 20);
+  //   }
+  //   document.addEventListener("scroll", lazyload);
+  //   window.addEventListener("resize", lazyload);
+  //   window.addEventListener("orientationChange", lazyload);
+  // });
+
   /*
   *
   *	Wow Animation

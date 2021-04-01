@@ -21,7 +21,7 @@ get_header(); ?>
 				endwhile; // End of the loop. 
 				?>
 			</div>
-			<div class="work-video">
+			<!-- <div class="work-video">
 				<div class="embed-container">
 	            <?php 
 					// specific post ID you want to pull
@@ -31,9 +31,10 @@ get_header(); ?>
 	            	wp_reset_postdata();
 	            ?>
 	        	</div>
-        	</div>
+        	</div> -->
 
 			<?php
+			$i=0;
 				$wp_query = new WP_Query();
 				$wp_query->query(array(
 				'post_type'=>'portfolio',
@@ -41,7 +42,22 @@ get_header(); ?>
 			));
 				if ($wp_query->have_posts()) :  ?>
 				<section class="work">
-				<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>	
+				<?php while ($wp_query->have_posts()) : $wp_query->the_post(); $i++;
+
+					$pId = get_the_ID();
+					$iurl = get_the_post_thumbnail_url($pId, 'work');
+					if( $i<7 ) {
+						$src = 'src';
+						$lazy = '';
+					} else {
+						$src = 'data-src';
+						$lazy = 'lazy';
+					}
+
+					$image = get_the_post_thumbnail( $pId );
+					$image = apply_filters( 'dominant_colors', $image, get_post_thumbnail_id ( $pId ) );
+
+					?>	
 
 					
 						<a href="<?php the_permalink(); ?>" class="third">
@@ -49,7 +65,9 @@ get_header(); ?>
 								<h2><?php the_title(); ?></h2>
 							</div>
 							<div class="cover">
-								<?php the_post_thumbnail('work'); ?>
+								<?php //the_post_thumbnail('work'); ?>
+								<!-- <img <?php echo $src; ?>="<?php echo $iurl; ?>" class="<?php echo $lazy; ?>"> -->
+								<?php echo $image; ?>
 							</div>
 							
 						</a>

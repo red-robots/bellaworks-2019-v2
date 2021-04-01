@@ -61,7 +61,7 @@ const imgSRC = './assets/img/raw/**/*';
 
 // Destination folder of optimized images.
 // > Must be different from the imagesSRC folder.
-const imgDST = './assets/img/';
+const imgDST = './images/';
 
 // >>>>> Watch files paths.
 // Path to all *.scss files inside css folder and inside them.
