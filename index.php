@@ -81,7 +81,7 @@ get_header(); ?>
 							<a href="<?php the_permalink(); ?>">
 							<?php 
 								if( has_post_thumbnail() ) {
-									the_post_thumbnail('blog');
+									the_post_thumbnail();
 								}
 							?>
 							<h2><?php the_title(); ?></h2>
