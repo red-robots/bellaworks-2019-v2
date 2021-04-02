@@ -167,6 +167,8 @@
 	//   window.addEventListener("resize", lazyload);
 	//   window.addEventListener("orientationChange", lazyload);
 	// });
+
+	
 </script>
 
 </body>
