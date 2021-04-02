@@ -1579,7 +1579,7 @@ svg:not(:root).svg-inline--fa{overflow:visible}
 .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
 .sticky{display:block}
-.home-banner{width:100%;height:100vh;background-color:#3689b4;margin:0;position:relative;background-image:url(images/cityscape.png);background-size:contain;background-repeat:no-repeat;background-position:bottom right}
+.home-banner{width:100%;height:100vh;background-color:#3689b4;margin:0;position:relative}
 .home-banner .hinter{width:100%;text-align:center;width:100%;float:left;color:#fff;height:10vh;font-size:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;clear:both;display:none}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -1826,7 +1826,7 @@ ul.footer-social,ul.side-social{-webkit-box-pack:start;-ms-flex-pack:start;justi
 ul.footer-social li,ul.side-social li{margin:0 1.24615em 0 0}
 ul.side-social li{margin:0 .8em 0 0}
 #leadmagnet{width:80%;margin:auto}
-.home-banner{background-size:cover}
+.home-banner{background-size:cover;background-image:url(images/cityscape.png);background-size:contain;background-repeat:no-repeat;background-position:bottom right}
 .home-banner .hinter{position:absolute;bottom:0;left:0;display:block}
 .colflex{height:65%}
 .home-flex{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0}
