@@ -7,6 +7,9 @@
 	    <li>
 	    	<a href="<?php bloginfo('url'); ?>/about-us">About Us</a>
 	    </li>
+	    <li>
+	    	<a href="<?php bloginfo('url'); ?>/services">Services</a>
+	    </li>
     	<li><a href="<?php bloginfo('url'); ?>/our-work">Our Work</a>
 	    	<!-- <ul class="dropdown">
 	    		<li>

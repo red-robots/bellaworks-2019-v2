@@ -1437,7 +1437,7 @@ body{font-family:futura-pt,sans-serif}
 .logo,h1.logo{width:200px;clear:none;float:left;font-size:1rem;position:relative;z-index:50}
 .logo a,h1.logo a{width:200px;display:block}
 .center{width:100%;text-align:center}
-.button{position:relative;display:inline-block;cursor:pointer;outline:0;border:0;margin:20px 0;vertical-align:middle;text-decoration:none;background:transparent;padding:0;font-size:16px;font-family:inherit;border-radius:1.625rem;background-color:#3689b4}
+.button{position:relative;display:inline-block;cursor:pointer;outline:0;border:0;margin:20px 0 0 0;vertical-align:middle;text-decoration:none;background:transparent;padding:0;font-size:16px;font-family:inherit;border-radius:1.625rem;background-color:#3689b4}
 .button.herobtn{background-color:rgba(255,255,255,0.3)}
 .button .action{width:15rem;height:auto}
 .button .action a.lead{width:100%;display:block;height:100%;position:absolute;top:0;left:0;z-index:1000000}
@@ -1476,7 +1476,7 @@ article.post .step .copy h2{color:#3689b4}
 .site-footer .footer-logo{width:150px;opacity:.5;margin:0 auto 30px auto}
 .third{width:100%;position:relative;text-align:left}
 .two-third{width:100%}
-.third-pad{padding:8.33333%}
+.third-pad{padding:60px 8.33333%}
 .half{width:100%;float:left}
 .half-pad{padding:8.33333%}
 .half-pad-contact{padding:0 8.33333%}
@@ -1579,7 +1579,7 @@ svg:not(:root).svg-inline--fa{overflow:visible}
 .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
 .sticky{display:block}
-.home-banner{width:100%;height:100vh;background-color:#3689b4;margin:0;position:relative}
+.home-banner{width:100%;height:100vh;background:#3689b4;background:linear-gradient(151deg,#3689b4 0,#2d5265 100%);margin:0;position:relative}
 .home-banner .hinter{width:100%;text-align:center;width:100%;float:left;color:#fff;height:10vh;font-size:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;clear:both;display:none}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -1703,9 +1703,10 @@ section.our-clients h3{margin:0 0 40px 0}
 section.our-clients .client{width:150px;margin:0 20px;opacity:.7}
 section.are-you-ready{width:100%;text-align:center;float:left;padding:40px 0}
 .work-video{width:90%;margin:0 auto;clear:both}
-section.home-sections{width:100%;float:left;position:relative;color:#fff}
+section.home-sections{width:100%;float:left;position:relative;color:#fff;padding-bottom:20px}
 section.home-sections h2.home-service{width:auto;float:left;margin-left:8.33333%;padding-top:6%}
 section.home-sections .third{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+section.home-sections .third:after{content:'';width:10%;position:absolute;border-bottom:2px solid #fff;bottom:0;left:45%}
 section.home-sections .service-wrap{width:100%;float:left;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;line-height:1.45}
 section.home-sections ul{margin:10px 0;padding:0;list-style:none}
 section.home-sections li{margin:0;padding:0}
@@ -1717,10 +1718,10 @@ section.home-sections .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1p
 section.home-partnership{width:100%;position:relative;float:right;color:#fff;padding:30px}
 section.home-partnership p{color:#fff;width:90%;margin:20px auto;font-size:1.5rem}
 section.home-partnership p.button-text{width:auto}
-section.home-partnership .button{background-color:rgba(255,255,255,0.1)}
 section.home-partnership h3{font-size:2.5rem;color:#fff;margin:0 0 40px 0;width:100%;text-align:center}
 section.home-partnership a{color:#fff}
 section.home-partnership a:hover{color:rgba(255,255,255,0.5)}
+section.home-partnership .button,.force-white .button{background-color:rgba(255,255,255,0.1)}
 section.services{width:100%;float:left;position:relative;color:#fff}
 section.services h2.home-service{width:auto;float:left;margin-left:8.33333%;padding-top:6%}
 section.services .third{margin:-4% 0 0 0}
@@ -1762,8 +1763,10 @@ section.service-page .third{display:block}
 section.service-page .third h2{line-height:1;margin-bottom:10px}
 section.service-page .third .permalink{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:all ease-out .3s;transition:all ease-out .3s;clear:both;float:left;margin:20px 0;color:#333}
 section.service-page .third:hover .permalink{float:right;-webkit-transform:scale(2);transform:scale(2);color:#f37748}
+section.service-page .third:hover .seemores{display:none}
 section.service-page .third .bottom{border-bottom:5px solid #efefef;width:100%;clear:both}
 section.service-page a{color:#4e5356;position:absolute;top:0;left:0;width:100%;height:100%;text-indent:-9000px}
+.seemores{font-size:14px;padding:0 0 0 5px;color:#f37748}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
@@ -1821,12 +1824,13 @@ article.post .step .copy{width:70%;float:right}
 .site-footer .footer-logo{margin:0 0 30px 0}
 .third{width:33.33333%;float:left;text-align:left}
 .two-third{width:66.666666666%;float:left}
+.third-pad{padding:8.33333%}
 .half{width:50%;float:left}
 ul.footer-social,ul.side-social{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 ul.footer-social li,ul.side-social li{margin:0 1.24615em 0 0}
 ul.side-social li{margin:0 .8em 0 0}
 #leadmagnet{width:80%;margin:auto}
-.home-banner{background-size:cover;background-image:url(images/cityscape.png);background-size:contain;background-repeat:no-repeat;background-position:bottom right}
+.home-banner{background-size:cover;background-image:url(images/cityscape.png);background-repeat:no-repeat;background-position:bottom right;background-color:#3689b4}
 .home-banner .hinter{position:absolute;bottom:0;left:0;display:block}
 .colflex{height:65%}
 .home-flex{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0}
@@ -1865,6 +1869,7 @@ section.work a.third{height:140px}
 .work-video{width:60%}
 section.home-sections{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 section.home-sections::before{position:absolute;top:0;bottom:0;left:33.33333%;display:block;width:33.33333%;background-color:#337fa7;content:""}
+section.home-sections .third:after{display:none}
 section.home-sections .service-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 section.home-partnership{padding:30px}
 section.home-partnership p{width:70%}
@@ -1880,6 +1885,7 @@ section.benefits .bene.odd{background-color:#efefef}
 section.benefits .bene.even{background-color:#fff}
 section.testis .testi{width:auto;margin:auto;-ms-flex-preferred-size:28%;flex-basis:28%}
 section.testis .testflex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.seemores{display:none}
 }@media screen and (min-width:900px){.home-flex section.image img{bottom:-80px;right:10%}
 section.hero h2{font-size:3.3rem}
 section.hero h3{font-size:1.6rem}

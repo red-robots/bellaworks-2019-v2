@@ -14,7 +14,7 @@
 			<p>Engage with your audience through effective e-mail campaigns, digital ads, and more</p>
 		</div>
 	</div>
-	<div class="center">
+	<div class="center force-white">
 		<div class="button white">
 			<div class="action">
 				<a class=" bob " href="<?php bloginfo('url'); ?>/services">

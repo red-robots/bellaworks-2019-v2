@@ -127,7 +127,8 @@ body {
   cursor: pointer;
   outline: none;
   border: 0;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
+  // margin: 20px 0;
   vertical-align: middle;
   text-decoration: none;
   background: transparent;
@@ -401,9 +402,9 @@ margin: 0 0 30px 0;
 	}
 }
 .third-pad {
-	padding: 8.33333%;
+	padding: 60px 8.33333%;
 	@media screen and (min-width: $tabwidth) {
-		
+		padding: 8.33333%;
 	}
 }
 .half {

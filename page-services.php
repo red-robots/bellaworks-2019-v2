@@ -73,7 +73,7 @@ $block_3_text = get_field('block_3_text');
 										
 									</div>	
 									<div class="permalink">
-										<i class="fas fa-chevron-right"></i>
+										<i class="fas fa-chevron-right"></i><span class="seemores">read more</span>
 									</div>
 									<div class="bottom"></div>
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
