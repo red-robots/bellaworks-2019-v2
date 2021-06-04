@@ -21,7 +21,10 @@ get_header();
 				while ( have_posts() ) : the_post(); 
 
 				//get_template_part('inc/title');
-
+					$gallery = get_field('gallery');
+// echo '<pre>';
+// print_r($gallery);
+// echo '</pre>';
 				?>
 					
 
@@ -68,6 +71,8 @@ get_header();
 											</div>
 										<?php endwhile; ?>
 									<?php endif; ?>
+									<?php 
+									if( $gallery ) {get_template_part('template-parts/gallery');} ?>
 							</article>
 							<?php get_template_part('template-parts/cta-service'); ?>
 						</section>

@@ -92,6 +92,9 @@ jQuery(document).ready(function ($) {
   *
   ------------------------------------*/
 
+  $('a.logopop').colorbox({
+    rel: 'logopop'
+  });
   $('a.gallery').colorbox({
     rel: 'gal',
     width: '80%',

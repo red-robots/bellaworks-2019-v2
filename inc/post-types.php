@@ -4,7 +4,7 @@
 add_action('init', 'js_custom_init');
 function js_custom_init() 
 {
-    // Staff
+    // Case Study
     $labels = array(
   'name' => _x('Services', 'post type general name'),
     'singular_name' => _x('Service', 'post type singular name'),
@@ -68,7 +68,7 @@ function js_custom_init()
   ); 
   register_post_type('portfolio',$args); // name used in query
   
-   // Staff
+   // Case Study
     $labels = array(
   'name' => _x('Case Studies', 'post type general name'),
     'singular_name' => _x('Case Studies', 'post type singular name'),
@@ -101,7 +101,8 @@ function js_custom_init()
   register_post_type('case_study',$args); // name used in query
 
 
-  // Staff
+
+    // Staff
     $labels = array(
   'name' => _x('Staff', 'post type general name'),
     'singular_name' => _x('Staff', 'post type singular name'),
@@ -132,9 +133,38 @@ function js_custom_init()
   
   ); 
   register_post_type('staff',$args); // name used in query
-  
   // Add more between here
+    // Case Study
+    $labels = array(
+  'name' => _x('Case Study', 'post type general name'),
+    'singular_name' => _x('Case Study', 'post type singular name'),
+    'add_new' => _x('Add New', 'Case Study'),
+    'add_new_item' => __('Add New Case Study'),
+    'edit_item' => __('Edit Case Study'),
+    'new_item' => __('New Case Study'),
+    'view_item' => __('View Case Study'),
+    'search_items' => __('Search Case Study'),
+    'not_found' =>  __('No Case Study found'),
+    'not_found_in_trash' => __('No Case Study found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Case Study'
+  );
+  $args = array(
+  'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','excerpt'),
   
+  ); 
+  register_post_type('case_study',$args); // name used in query
   // and here
   
   } // close custom post type

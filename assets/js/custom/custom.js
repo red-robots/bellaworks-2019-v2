@@ -98,6 +98,9 @@ var tag = document.createElement('script');
 	*	Colorbox
 	*
 	------------------------------------*/
+	$('a.logopop').colorbox({
+		rel:'logopop'
+	});
 	$('a.gallery').colorbox({
 		rel:'gal',
 		width: '80%', 

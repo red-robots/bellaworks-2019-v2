@@ -19,6 +19,8 @@ $block_3_title = get_field('block_3_title');
 $block_3_subtitle = get_field('block_3_subtitle');
 $block_3_text = get_field('block_3_text');
 
+
+
 ?>
 
 	<div id="primary" class="content-area-full">
@@ -61,6 +63,8 @@ $block_3_text = get_field('block_3_text');
 							));
 						if ($wp_query->have_posts()) : ?>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); 
+								$show = get_field('show_on_services_page');
+									if( $show != 'no' ) {
 									$exc = get_field('excerpt');
 								?>
 								<div class="third blogpost ">
@@ -78,6 +82,7 @@ $block_3_text = get_field('block_3_text');
 									<div class="bottom"></div>
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</div>
+							<?php } ?>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					
