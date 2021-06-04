@@ -546,11 +546,18 @@ svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-bl
 		background-color: #fff;
 		@include transition(all ease .4s);
 		overflow: hidden;
+		margin: 0 0 30px 0;
 		@include preshadowhover();
 		&:hover {
 			@include shadowhover();
 		}
+		a {
+			border-bottom: 0;
+			&:hover {
+				border-bottom: 0;
+				background-color: transparent;
+			}
+		}
 	}
 }
-
 
