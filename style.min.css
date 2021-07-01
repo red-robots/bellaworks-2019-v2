@@ -1583,6 +1583,7 @@ svg:not(:root).svg-inline--fa{overflow:visible}
 #container .item:hover{-webkit-box-shadow:0 0 27px 3px rgba(0,0,0,0.1);box-shadow:0 0 27px 3px rgba(0,0,0,0.1)}
 #container .item a{border-bottom:0}
 #container .item a:hover{border-bottom:0;background-color:transparent}
+#wordproof-certificate-link p a{font-size:14px}
 .sticky{display:block}
 .home-banner{width:100%;height:100vh;background:#3689b4;background:linear-gradient(151deg,#3689b4 0,#2d5265 100%);margin:0;position:relative}
 .home-banner .hinter{width:100%;text-align:center;width:100%;float:left;color:#fff;height:10vh;font-size:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;clear:both;display:none}
