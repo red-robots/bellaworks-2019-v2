@@ -1586,9 +1586,15 @@ svg:not(:root).svg-inline--fa{overflow:visible}
 #wordproof-certificate-link p a{font-size:14px}
 section.landing{width:100%;float:left;padding:0 0 160px 0;border-bottom:50px solid #3689b4}
 section.landing .action.last{width:22rem}
-section.landing-hero{width:100%;background-color:#3689b4;text-align:center;padding:150px 0}
-section.landing-hero h1{color:#fff;font-size:80px}
-section.landing-hero .subhead{color:rgba(255,255,255,0.8);font-size:22px;width:40%;margin:0 auto 50px auto}
+section.landing-hero{width:100%;background-color:#3689b4;text-align:center;padding:150px 0;float:left}
+section.landing-hero h1{color:#fff;font-size:80px;line-height:1}
+section.landing-hero .subhead{color:rgba(255,255,255,0.8);font-size:22px;width:90%;margin:0 auto 50px auto}
+section.landing-hero .subhead.center{text-align:center}
+.form-wrapper{padding:20px}
+.form-wrapper .gform_wrapper .top_label .gfield_label,.form-wrapper .gfield_description,.form-wrapper .gf_step_current_page,.form-wrapper .gform_legacy_markup_wrapper .gf_progressbar_wrapper .gf_progressbar_title,.form-wrapper .gform_legacy_markup_wrapper .field_sublabel_below .ginput_complex.ginput_container label,.form-wrapper .gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label{color:#fff}
+.form-wrapper .gform_legacy_markup_wrapper .field_description_below .gfield_description{font-size:16px}
+.form-wrapper .gform_legacy_markup_wrapper .gform_page_footer .button.gform_previous_button,.form-wrapper .gform_legacy_markup_wrapper .gform_page_footer .button.gform_next_button{border-radius:0;padding:20px 35px;background-color:#fff;color:#f37748;text-transform:uppercase;font-weight:bold;-webkit-box-shadow:none;box-shadow:none;text-shadow:none;border:0;cursor:pointer;-webkit-transition:all ease .1s;transition:all ease .1s}
+.form-wrapper input.gform_button{background-color:#f37748}
 section.landing-what{width:100%;float:left;text-align:center;padding:60px 0}
 section.landing-what .row{width:60%;margin:60px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 section.landing-what .row.even{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
@@ -1864,6 +1870,12 @@ ul.footer-social,ul.side-social{-webkit-box-pack:start;-ms-flex-pack:start;justi
 ul.footer-social li,ul.side-social li{margin:0 1.24615em 0 0}
 ul.side-social li{margin:0 .8em 0 0}
 #leadmagnet{width:80%;margin:auto}
+section.landing-hero .subhead{margin:0 auto 50px 0;font-size:26px}
+section.landing-hero .subhead.center{margin:0 auto 50px auto}
+section.landing-hero .left{width:65%;float:left;padding:40px 5%;text-align:left}
+section.landing-hero .right{width:35%;float:right}
+section.landing-hero .right .center{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%}
+.form-wrapper{max-width:1000px;margin:0 auto}
 .home-banner{background-size:cover;background-image:url(images/cityscape.png);background-repeat:no-repeat;background-position:bottom right;background-color:#3689b4}
 .home-banner .hinter{position:absolute;bottom:0;left:0;display:block}
 .colflex{height:65%}

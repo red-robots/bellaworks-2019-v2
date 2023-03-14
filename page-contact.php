@@ -28,7 +28,7 @@ get_header(); ?>
 					<section class="info">
 						<h3>Visit Us.</h3>
 						Bellaworks Web Design<br>
-						3120 North Davidson St, Unit 200<br>
+						436 E 36th St<br>
 						Charlotte, North Carolina 28205<br>
 					</section>
 					<section class="info">

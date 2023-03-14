@@ -87,7 +87,7 @@
 			</div>
 			<section class="info">
 				<b>Bellaworks Web Design</b><br>
-				3120 North Davidson St, Unit 200<br>
+				436 E 36th St<br>
 				Charlotte, North Carolina 28205<br>
 				<b>P</b> 704.375.0831<br>
 				<b>M </b>info@bellaworksweb.com
@@ -124,7 +124,10 @@
 	<div id="leadmagnet">
 		<h2><?php echo $offerTitle; ?></h2>
 		<div class="form">
-			<?php echo do_shortcode('[gravityform id="9" title="false" description="true"]'); ?>
+			<?php 
+			//echo do_shortcode('[gravityform id="9" title="false" description="true"]'); 
+			echo do_shortcode('[gravityform id="9" title="false" description="true"]');
+			?>
 			<div class="alt-down">
 				<a href="<?php bloginfo('url'); ?>/share">Just give me the download</a>
 			</div>

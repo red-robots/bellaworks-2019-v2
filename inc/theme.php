@@ -17,6 +17,10 @@ function bw_enable_strict_transport_security_hsts_header_wordpress() {
 }
 add_action( 'send_headers', 'bw_enable_strict_transport_security_hsts_header_wordpress' );
 
+
+// gravity_form_enqueue_scripts($form_id, $ajax);
+gravity_form_enqueue_scripts(4, true);
+
 /*-------------------------------------
 
   gutenberg stuff

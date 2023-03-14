@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
 <head>
 	<title>Build a Website and a Brand</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +24,6 @@
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="<?php bloginfo('template_url'); ?>/favicons/manifest.json">
 	<link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
-</head>
-
-
-
 <?php
 /**
  * Template Name: Promo Landing Page
@@ -38,7 +34,12 @@
  */
 wp_head();
 //get_header(); ?>
-<body>
+</head>
+
+
+
+
+<body <?php body_class(); ?>>
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
 
@@ -53,17 +54,21 @@ wp_head();
 
 				<section class="landing">
 					<section class="landing-hero">
-						<h1>Build a Website and a Brand</h1>
-						<div class="subhead">Elevate your online presence and reach target audiences with comprehensive website and marketing solutions.</div>
-						<div class="center">
-							<div class="button white">
-								<div class="action">
-									<a class=" bob " href="#form">
-										<div class="circle">
-											<span class="icon arrow"></span>
-										</div>
-										<p class="button-text blue">Get a Quote</p>
-									</a>
+						<div class="left js-blocks">
+							<h1>Build a Website<br>and a Brand</h1>
+							<div class="subhead">Elevate your online presence and reach target audiences with comprehensive website and marketing solutions.</div>
+						</div>
+						<div class="right js-blocks">
+							<div class="center">
+								<div class="button herobtn white">
+									<div class="action">
+										<a class="  " href="<?php bloginfo('url'); ?>/your-new-website/your-new-website-inquiry/">
+											<div class="circle hero">
+												<span class="icon arrow"></span>
+											</div>
+											<p class="button-text blue">Get a Quote</p>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -101,11 +106,11 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action">
-									<a class=" bob " href="#form">
+									<a class="  " href="<?php bloginfo('url'); ?>/your-new-website/your-new-website-inquiry/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
-										<p class="button-text blue">Let’s Get Started</p>
+										<p class="button-text blue">Find Your Solutions</p>
 									</a>
 								</div>
 							</div>
@@ -166,7 +171,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action last">
-									<a class=" bob " href="#form">
+									<a class=" sample" href="<?php bloginfo('url'); ?>/your-new-website/your-new-website-inquiry/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
@@ -178,13 +183,34 @@ wp_head();
 					</section>
 				</section>
 
-
-
+		
 			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
+<div style="display: none;">
+	<div id="lead-gen-form" style='padding:10px; background:#fff;'>adfa
+		<?php //echo do_shortcode('[gravityform id="11" title="false" description="true"]'); ?>
+	</div>
+</div>	
+<div style="display: none;">
+	<div id="leadmagnet">
+		<h2>sdfsd<?php echo $offerTitle; ?></h2>
+		<!-- <div class="form">
+			<?php echo do_shortcode('[gravityform id="9" title="false" description="true"]'); ?>
+			<div class="alt-down">
+				<a href="<?php bloginfo('url'); ?>/share">Just give me the download</a>
+			</div>
+		</div> -->
+	</div>
+</div>
 <?php wp_footer(); ?>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".sample").colorbox({inline:true, width:"50%"});
+		});
+</script>
 </body>
 </html>

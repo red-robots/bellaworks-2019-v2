@@ -112,6 +112,12 @@ var tag = document.createElement('script');
 		width:"100%",
 		opacity:1
 	});
+	// sales page
+	// $(".landing").colorbox({
+	// 	inline:true, 
+	// 	width:"100%",
+	// 	opacity:1
+	// });
 	
 	/*
 	*

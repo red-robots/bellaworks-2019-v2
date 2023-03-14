@@ -580,15 +580,92 @@ section.landing-hero {
 	background-color: $color-light-blue;
 	text-align: center;
 	padding: 150px 0;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
 	h1 {
 		color: #fff;
 		font-size: 80px;
+		line-height: 1;
 	}
 	.subhead {
 		color: rgba(#fff, .8);
 		font-size: 22px;
-		width: 40%;
+		width: 90%;
 		margin: 0 auto 50px auto;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 auto 50px 0;
+			font-size: 26px;
+		}
+		&.center {
+			text-align: center;
+			@media screen and (min-width: $tabwidth) {
+				margin: 0 auto 50px auto;
+			}
+			
+		}
+	}
+	.left {
+		@media screen and (min-width: $tabwidth) {
+			width: 65%;
+			float: left;
+			padding: 40px 5%;
+			text-align: left;
+		}
+	}
+	.right {
+		@media screen and (min-width: $tabwidth) {
+			width: 35%;
+			float: right;
+
+		}
+		.center {
+			@media screen and (min-width: $tabwidth) {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+			}
+		}
+	}
+}
+.form-wrapper {
+	padding: 20px;
+	@media screen and (min-width: $tabwidth) {
+		
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.gform_wrapper .top_label .gfield_label,
+	.gfield_description,
+	.gf_step_current_page,
+	.gform_legacy_markup_wrapper .gf_progressbar_wrapper .gf_progressbar_title,
+	.gform_legacy_markup_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
+		color: #fff;
+	}
+	.gform_legacy_markup_wrapper .field_description_below .gfield_description {
+		font-size: 16px;
+	}
+	.gform_legacy_markup_wrapper .gform_page_footer .button.gform_previous_button,
+	.gform_legacy_markup_wrapper .gform_page_footer .button.gform_next_button {
+		border-radius: 0;
+	    padding: 20px 35px;
+	    background-color: #fff;
+	    color: $color-mandarin;
+	    text-transform: uppercase;
+	    font-weight: bold;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    text-shadow: none;
+	    border: 0;
+	    cursor: pointer;
+	    -webkit-transition: all ease 0.1s;
+	    transition: all ease 0.1s;
+	}
+	input.gform_button {
+		background-color: $color-mandarin;
 	}
 }
 section.landing-what {
